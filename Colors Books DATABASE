@@ -1,0 +1,13 @@
+/** Books list:
+Red books (4)
+blue Books (1)
+white Books (2)**/
+
+
+CREATE TABLE books (id INTEGER PRIMARY KEY,
+name TEXT, quantity INTEGER );
+
+INSERT INTO books VALUES (1, "red books", 4);
+INSERT INTO books VALUES (2, "blue books",1);
+INSERT INTO books VALUES (3, "white books", 2);
+SELECT * FROM books
