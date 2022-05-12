@@ -1,0 +1,10 @@
+SELECT 
+people.Show_id
+,people.director
+,titles.title
+,Titles.type
+FROM "CharlotteChaze/BreakIntoTech". "netflix_people" people
+
+Left JOIN "CharlotteChaze/BreakIntoTech"."netflix_titles_info" titles
+
+ON people.show_id=titles.show_id;
