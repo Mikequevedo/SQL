@@ -1,0 +1,11 @@
+ SELECT c.name AS countru, continent, L.name AS language, official 
+ FROM countries AS C 
+ INNER JOIN languages AS L
+ USING (code);
+ 
+ 
+ SELECT Firstname, Lastname, Gender, Salary ,
+ COUNT (Gender) OVER (PARTITIOM BY Gender) as TotalGender
+ FROM SQLTutorial_EmployeeDemographics dem
+ JOIN SQLTutorial_EmployeeSalary Sal
+ On dem.EmployeeID = sal,EmployeeID 
